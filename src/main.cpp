@@ -1,4 +1,5 @@
 #include <iostream>
+#include <TcpConnection.h>
 
 using namespace std;
 
@@ -11,5 +12,8 @@ using namespace std;
 // PacketInjector.cpp | Sends packets you manually craft
 
 int main() {
-    cout << "hello" << endl;
+    bool isClient { true }; // client initializes SYN
+
+    TcpConnection client {500, "192.168.100.124", 880, "192.168.11.34", isClient};
+    TcpConnection server {880, "192.168.11.34", 500, "192.168.100.124", !isClient};
 }

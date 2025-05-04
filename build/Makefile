@@ -129,6 +129,150 @@ tcp_stack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/build
 .PHONY : tcp_stack/fast
 
+src/ArpResolver.o: src/ArpResolver.cpp.o
+.PHONY : src/ArpResolver.o
+
+# target to build an object file
+src/ArpResolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/ArpResolver.cpp.o
+.PHONY : src/ArpResolver.cpp.o
+
+src/ArpResolver.i: src/ArpResolver.cpp.i
+.PHONY : src/ArpResolver.i
+
+# target to preprocess a source file
+src/ArpResolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/ArpResolver.cpp.i
+.PHONY : src/ArpResolver.cpp.i
+
+src/ArpResolver.s: src/ArpResolver.cpp.s
+.PHONY : src/ArpResolver.s
+
+# target to generate assembly for a file
+src/ArpResolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/ArpResolver.cpp.s
+.PHONY : src/ArpResolver.cpp.s
+
+src/PacketInjector.o: src/PacketInjector.cpp.o
+.PHONY : src/PacketInjector.o
+
+# target to build an object file
+src/PacketInjector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketInjector.cpp.o
+.PHONY : src/PacketInjector.cpp.o
+
+src/PacketInjector.i: src/PacketInjector.cpp.i
+.PHONY : src/PacketInjector.i
+
+# target to preprocess a source file
+src/PacketInjector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketInjector.cpp.i
+.PHONY : src/PacketInjector.cpp.i
+
+src/PacketInjector.s: src/PacketInjector.cpp.s
+.PHONY : src/PacketInjector.s
+
+# target to generate assembly for a file
+src/PacketInjector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketInjector.cpp.s
+.PHONY : src/PacketInjector.cpp.s
+
+src/PacketSniffer.o: src/PacketSniffer.cpp.o
+.PHONY : src/PacketSniffer.o
+
+# target to build an object file
+src/PacketSniffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketSniffer.cpp.o
+.PHONY : src/PacketSniffer.cpp.o
+
+src/PacketSniffer.i: src/PacketSniffer.cpp.i
+.PHONY : src/PacketSniffer.i
+
+# target to preprocess a source file
+src/PacketSniffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketSniffer.cpp.i
+.PHONY : src/PacketSniffer.cpp.i
+
+src/PacketSniffer.s: src/PacketSniffer.cpp.s
+.PHONY : src/PacketSniffer.s
+
+# target to generate assembly for a file
+src/PacketSniffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketSniffer.cpp.s
+.PHONY : src/PacketSniffer.cpp.s
+
+src/TapInterface.o: src/TapInterface.cpp.o
+.PHONY : src/TapInterface.o
+
+# target to build an object file
+src/TapInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TapInterface.cpp.o
+.PHONY : src/TapInterface.cpp.o
+
+src/TapInterface.i: src/TapInterface.cpp.i
+.PHONY : src/TapInterface.i
+
+# target to preprocess a source file
+src/TapInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TapInterface.cpp.i
+.PHONY : src/TapInterface.cpp.i
+
+src/TapInterface.s: src/TapInterface.cpp.s
+.PHONY : src/TapInterface.s
+
+# target to generate assembly for a file
+src/TapInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TapInterface.cpp.s
+.PHONY : src/TapInterface.cpp.s
+
+src/TcpConnection.o: src/TcpConnection.cpp.o
+.PHONY : src/TcpConnection.o
+
+# target to build an object file
+src/TcpConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpConnection.cpp.o
+.PHONY : src/TcpConnection.cpp.o
+
+src/TcpConnection.i: src/TcpConnection.cpp.i
+.PHONY : src/TcpConnection.i
+
+# target to preprocess a source file
+src/TcpConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpConnection.cpp.i
+.PHONY : src/TcpConnection.cpp.i
+
+src/TcpConnection.s: src/TcpConnection.cpp.s
+.PHONY : src/TcpConnection.s
+
+# target to generate assembly for a file
+src/TcpConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpConnection.cpp.s
+.PHONY : src/TcpConnection.cpp.s
+
+src/TcpSegment.o: src/TcpSegment.cpp.o
+.PHONY : src/TcpSegment.o
+
+# target to build an object file
+src/TcpSegment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpSegment.cpp.o
+.PHONY : src/TcpSegment.cpp.o
+
+src/TcpSegment.i: src/TcpSegment.cpp.i
+.PHONY : src/TcpSegment.i
+
+# target to preprocess a source file
+src/TcpSegment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpSegment.cpp.i
+.PHONY : src/TcpSegment.cpp.i
+
+src/TcpSegment.s: src/TcpSegment.cpp.s
+.PHONY : src/TcpSegment.s
+
+# target to generate assembly for a file
+src/TcpSegment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpSegment.cpp.s
+.PHONY : src/TcpSegment.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +306,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tcp_stack"
+	@echo "... src/ArpResolver.o"
+	@echo "... src/ArpResolver.i"
+	@echo "... src/ArpResolver.s"
+	@echo "... src/PacketInjector.o"
+	@echo "... src/PacketInjector.i"
+	@echo "... src/PacketInjector.s"
+	@echo "... src/PacketSniffer.o"
+	@echo "... src/PacketSniffer.i"
+	@echo "... src/PacketSniffer.s"
+	@echo "... src/TapInterface.o"
+	@echo "... src/TapInterface.i"
+	@echo "... src/TapInterface.s"
+	@echo "... src/TcpConnection.o"
+	@echo "... src/TcpConnection.i"
+	@echo "... src/TcpConnection.s"
+	@echo "... src/TcpSegment.o"
+	@echo "... src/TcpSegment.i"
+	@echo "... src/TcpSegment.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
