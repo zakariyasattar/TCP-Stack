@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 uint32_t TcpConnection::convertIPTo32Bit(std::string IPAddy) {
     std::vector<std::string> IPBlocks {};

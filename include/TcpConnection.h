@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 #include <string>
+#include <cstdint>
 #include <iostream>
 
 // Connections in TCP are defined by a port number and IP address

@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zakariyasattar/TCP-stack
+CMAKE_SOURCE_DIR = /home/zakariya/TCP-Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zakariyasattar/TCP-stack/build
+CMAKE_BINARY_DIR = /home/zakariya/TCP-Stack/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/tcp_stack.dir/clean
 CMakeFiles/tcp_stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakariyasattar/TCP-stack/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target tcp_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zakariya/TCP-Stack/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target tcp_stack"
 .PHONY : CMakeFiles/tcp_stack.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tcp_stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakariyasattar/TCP-stack/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zakariya/TCP-Stack/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tcp_stack.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakariyasattar/TCP-stack/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zakariya/TCP-Stack/build/CMakeFiles 0
 .PHONY : CMakeFiles/tcp_stack.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ tcp_stack: CMakeFiles/tcp_stack.dir/rule
 # codegen rule for target.
 CMakeFiles/tcp_stack.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/zakariyasattar/TCP-stack/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target tcp_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zakariya/TCP-Stack/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target tcp_stack"
 .PHONY : CMakeFiles/tcp_stack.dir/codegen
 
 # clean rule for target.

@@ -48,27 +48,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zakariyasattar/TCP-stack
+CMAKE_SOURCE_DIR = /home/zakariya/TCP-Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zakariyasattar/TCP-stack/build
+CMAKE_BINARY_DIR = /home/zakariya/TCP-Stack/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakariyasattar/TCP-stack/build/CMakeFiles /Users/zakariyasattar/TCP-stack/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zakariya/TCP-Stack/build/CMakeFiles /home/zakariya/TCP-Stack/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zakariyasattar/TCP-stack/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zakariya/TCP-Stack/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,30 +201,6 @@ src/PacketSniffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/PacketSniffer.cpp.s
 .PHONY : src/PacketSniffer.cpp.s
 
-src/TapInterface.o: src/TapInterface.cpp.o
-.PHONY : src/TapInterface.o
-
-# target to build an object file
-src/TapInterface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TapInterface.cpp.o
-.PHONY : src/TapInterface.cpp.o
-
-src/TapInterface.i: src/TapInterface.cpp.i
-.PHONY : src/TapInterface.i
-
-# target to preprocess a source file
-src/TapInterface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TapInterface.cpp.i
-.PHONY : src/TapInterface.cpp.i
-
-src/TapInterface.s: src/TapInterface.cpp.s
-.PHONY : src/TapInterface.s
-
-# target to generate assembly for a file
-src/TapInterface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TapInterface.cpp.s
-.PHONY : src/TapInterface.cpp.s
-
 src/TcpConnection.o: src/TcpConnection.cpp.o
 .PHONY : src/TcpConnection.o
 
@@ -273,6 +249,30 @@ src/TcpSegment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TcpSegment.cpp.s
 .PHONY : src/TcpSegment.cpp.s
 
+src/TunInterface.o: src/TunInterface.cpp.o
+.PHONY : src/TunInterface.o
+
+# target to build an object file
+src/TunInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TunInterface.cpp.o
+.PHONY : src/TunInterface.cpp.o
+
+src/TunInterface.i: src/TunInterface.cpp.i
+.PHONY : src/TunInterface.i
+
+# target to preprocess a source file
+src/TunInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TunInterface.cpp.i
+.PHONY : src/TunInterface.cpp.i
+
+src/TunInterface.s: src/TunInterface.cpp.s
+.PHONY : src/TunInterface.s
+
+# target to generate assembly for a file
+src/TunInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tcp_stack.dir/build.make CMakeFiles/tcp_stack.dir/src/TunInterface.cpp.s
+.PHONY : src/TunInterface.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -315,15 +315,15 @@ help:
 	@echo "... src/PacketSniffer.o"
 	@echo "... src/PacketSniffer.i"
 	@echo "... src/PacketSniffer.s"
-	@echo "... src/TapInterface.o"
-	@echo "... src/TapInterface.i"
-	@echo "... src/TapInterface.s"
 	@echo "... src/TcpConnection.o"
 	@echo "... src/TcpConnection.i"
 	@echo "... src/TcpConnection.s"
 	@echo "... src/TcpSegment.o"
 	@echo "... src/TcpSegment.i"
 	@echo "... src/TcpSegment.s"
+	@echo "... src/TunInterface.o"
+	@echo "... src/TunInterface.i"
+	@echo "... src/TunInterface.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

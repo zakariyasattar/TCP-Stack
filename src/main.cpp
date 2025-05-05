@@ -1,5 +1,11 @@
 #include <iostream>
-#include <TcpConnection.h>
+#include <net/if.h>
+#include <thread>
+
+#include "TcpConnection.h"
+#include "PacketSniffer.h"
+#include "PacketInjector.h"
+#include "TunInterface.h"
 
 using namespace std;
 
@@ -16,6 +22,26 @@ int main() {
 
     TcpConnection client {500, "192.168.100.124", 880, "192.168.11.34", isClient};
     TcpConnection server {880, "192.168.11.34", 500, "192.168.100.124", !isClient};
+
+    TunInterface interface {};
+
+    std::thread sniff {[&]() {
+        PacketSniffer sniffer (interface);
+        sniffer.listen();
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    }};
+
+    std::thread inject {[&]() {
+        PacketInjector injector(interface);
+        injector.inject();
+    }};
+
+    sniff.join();
+    inject.join();
+
+    std::cout << if_nametoindex("tap0") << std::endl;
+
 
     // test
 }
