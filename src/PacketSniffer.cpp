@@ -19,6 +19,13 @@ void PacketSniffer::listen() {
 
     	if(data.size() > 0) {
     		std::cout << data.size() << std::endl;
+    		int start_idx { 20 };
+
+    		while(start_idx < data.size()) {
+    			std::cout << data[start_idx++];
+    		}
+
+    		std::cout << '\n';
     	}
     }
 }

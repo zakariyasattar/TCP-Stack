@@ -40,7 +40,7 @@ int main() {
     sniff.join();
     inject.join();
 
-    std::cout << if_nametoindex("tap0") << std::endl;
+    // std::cout << if_nametoindex("tap0") << std::endl;
 
 
     // test
